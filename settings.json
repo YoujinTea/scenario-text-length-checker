@@ -1,0 +1,11 @@
+{
+    "linefeedTag": [
+        "[r]"
+    ],
+    "pageBreakTag": [
+        "[p]",
+        "[」]"
+    ],
+    "lineCount": 2,
+    "maxRowLength": 30
+}
