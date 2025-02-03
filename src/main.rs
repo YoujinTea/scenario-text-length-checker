@@ -151,8 +151,6 @@ fn check_text_length(ks_file: &Path, display_path: &Path, settings: &Settings) {
         for statement in &statements[0..statements.len() - 1] {
             if check_statement_length(statement, settings) {
                 println!("{} {}行: 文章が長すぎます。", display_path.display(), i + 1);
-                let mut file = File::create("output1.txt").unwrap();
-                writeln!(file, "{} {}行: 文章が長すぎます。: {}", display_path.display(), i + 1, statement.join(",")).unwrap();
             }
         }
 
